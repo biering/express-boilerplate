@@ -2,6 +2,16 @@
 
 > Simple Express Backend w/ Webpack, ES6, ESLint, Hot-Reload Template
 
+## Includes
+
+- Webpack 3
+- Babel (ES6, babel-preset-env)
+- Hot-Reload
+- ESLint w/ Standard
+- Express
+
+## Usage
+
 ```bash
 git clone https://github.com/chryb/express-boilerplate
 
