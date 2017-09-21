@@ -1,4 +1,5 @@
 import express from 'express'
+import chalk   from 'chalk'
 import path    from 'path'
 
 const app = express()
@@ -17,7 +18,13 @@ app.get('/hello', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log('Hello World listening on port ' + port)
+  const log = console.log
+  log('\n')
+  log(chalk.bgGreen.black(`Server listening on http://localhost:${port}/ ..`))
+  log('\n')
+
+  log(`${chalk.blue('Much fun! :)')}`)
+  log('\n')
 })
 
 export default app
